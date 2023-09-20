@@ -627,8 +627,13 @@ hr {
 }
 
 .container-header img {
-  width: 10rem;
-  height: 100px;
+  width: 12rem;
+  height: auto;
+  margin: 30px 0;
+}
+
+.tabel-jadwal {
+  overflow-x: auto;
 }
 
 .tabel-jadwal table,
@@ -852,6 +857,13 @@ th {
   .container-1,
   .container-2 {
     width: 100vw;
+  }
+
+  .tabel-jadwal,
+  .tabel-jadwal table {
+    margin-bottom: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
