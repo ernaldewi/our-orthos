@@ -782,6 +782,10 @@ th {
     text-align: center;
   }
 
+  .erna-reverse {
+    flex-direction: column-reverse;
+  }
+
   .erna-hero-section .column {
     flex: none;
     width: 100%;
