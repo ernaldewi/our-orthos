@@ -589,13 +589,8 @@ hr {
   text-align: center;
 }
 .container-header img {
-  width: 12rem;
-  height: auto;
-  margin: 30px 0;
-}
-
-.tabel-jadwal {
-  overflow-x: auto;
+  width: 10rem;
+  height: 100px;
 }
 
 .tabel-jadwal {
@@ -1048,10 +1043,6 @@ input[type="password"] {
     text-align: center;
   }
 
-  .erna-reverse {
-    flex-direction: column-reverse;
-  }
-
   .erna-hero-section .column {
     flex: none;
     width: 100%;
@@ -1130,8 +1121,8 @@ input[type="password"] {
   }
 
   /* styling hanif */
-  .Rectangle-5{
 
+  .Rectangle-5 {
     width: 100vw;
     height: 100px;
     background-color: var(--primary);
@@ -1192,7 +1183,6 @@ input[type="password"] {
   .header-username {
     font-size: 1rem;
     text-align: center;
-
   }
 
   /* START LOGIN NEW */
@@ -1206,16 +1196,7 @@ input[type="password"] {
     margin: 20px;
     padding: 0px;
   }
-  
-  
-  .tabel-jadwal,
-  .tabel-jadwal table {
-    margin-bottom: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
-    }
 }
-
 
 /* Mobile */
 @media (max-width: 575.98px) {
