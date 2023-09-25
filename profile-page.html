@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+=<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Booking Form</title>
+    <title>Profil Page</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,11 +33,14 @@
         <div class="navbar-middle">
           <a href="index.html">Home</a>
           <a href="about.html">About Us</a>
-          <a href="plan-your-visit.html" class="active">Plan Your Visit</a>
-          <!-- <a href="profile-page.html">Book Appointment</a> -->
+          <a href="plan-your-visit.html">Plan Your Visit</a>
+          <a href="profile-page.html">Book Appointment</a>
         </div>
-        <div class="navbar-login">
+        <!-- <div class="navbar-login">
           <a href="login.html" class="login">Login</a>
+        </div> -->
+        <div class="navbar-logout">
+          <a href="index.html" class="login">Log Out</a>
         </div>
       </div>
       <div class="navbar-right">
@@ -49,55 +52,51 @@
     </nav>
     <!-- Navbar End -->
 
-    <!-- Header/Hero -->
-    <div class="Rectangle-5">
-      <h1>BOOKING FORM</h1>
-    </div>
-    <div class="Rectangle-6">
-      <p>
-        Please choose your desired dentist, date, and time for your appointment
-      </p>
-    </div>
-    <!-- End of Hero -->
+    <!-- Profile page -->
+    <section class="satusemua">
+      <div class="header-username">
+        <h1>Hi, Username</h1>
+      </div>
+      <div class="container-account-booked">
+        <div class="account">
+          <h1>Account</h1>
+          <div class="container-account">
+            <table class="tableprofle1">
+              <tr class="tr-1">
+                <th class="noborder">Username :</th>
+                <td class="manualborder">Username</td>
+              </tr>
+              <tr>
+                <th class="noborder">E-Mail :</th>
+                <td class="manualborder">username123@gmail.com</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="booked-app">
+          <h1>Booked Appointment</h1>
+          <div class="container-account">
+            <table class="tableprofile">
+              <tr class="tr-1">
+                <th>Dentist :</th>
+                <td>Doktor1</td>
+              </tr>
+              <tr>
+                <th>Date :</th>
+                <td>25/10/2023</td>
+              </tr>
+              <tr>
+                <th>Time :</th>
+                <td>16:00</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
 
-    <!-- Book Form -->
-
-    <div class="book-form">
-      <form action="">
-        <div class="divlabel-1">
-          <label for="choosedentis">Dentist</label><br />
-          <select name="choosedentis" id="choosedentis">
-            <option value="0">choose dentis</option>
-            <option value="dokter1">dokter 1</option>
-            <option value="dokter2">dokter 2</option>
-            <option value="dokter3">dokter 3</option>
-          </select>
-        </div>
-        <div class="divlabel-2">
-          <label for="date">Date & Time</label><br />
-          <select name="date" id="date">
-            <option value="0">select the day</option>
-            <option value="selasa">Senin</option>
-            <option value="selasa">Selasa</option>
-            <option value="rabu">Rabu</option>
-          </select>
-          <select name="time" id="time">
-            <option value="0">Choose time</option>
-            <option value="10.00">10.00</option>
-            <option value="11.00">11.00</option>
-            <option value="12.00">12.00</option>
-          </select>
-        </div>
-        <p>
-          Appointment details can be seen through your profile page after
-          booking appointment.
-        </p>
-        <br />
-        <div class="book-2">
-          <a href="profile-page.html">Book Appointment</a>
-        </div>
-      </form>
-    </div>
+    <!-- End of Profi Page -->
 
     <!-- Footer -->
     <footer class="footer">

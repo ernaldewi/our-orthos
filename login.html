@@ -3,23 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="css/style.css" />
     <title>Login</title>
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
-
   <body>
     <!-- Navbar -->
     <nav class="navbar">
       <div class="navbar-logo">
-        <a href=""><img src="assets/svg/logo.svg" alt="" /></a>
+        <a href="index.html"><img src="./assets/img/logo.svg" alt="" /></a>
       </div>
       <div id="dropdown" data-visible="false" class="navbar-nav">
         <div class="navbar-middle">
           <a href="index.html">Home</a>
           <a href="about.html">About Us</a>
-          <a href="plan-your-visit.html">Plan Your Visit</a>
-          <a href="profile page.html">Book Appointment</a>
+          <a href="plan-your-visit.html" class="active">Plan Your Visit</a>
+          <!-- <a href="profile-page.html">Book Appointment</a> -->
         </div>
         <div class="navbar-login">
           <a href="login.html" class="login">Login</a>
@@ -35,36 +33,44 @@
     <!-- Navbar End -->
 
     <!-- Konten Start -->
-    <div class="main">
+    <div class="login-main">
       <div class="konten">
-        <h2>Login to My Account</h2>
-        <img src="asset/img/login.png" />
+        <img src="./assets/img/login.png" />
       </div>
-
-      <form action="#" method="post" class="loginForm" autocomplete="off">
-        <div class="form-group">
-          <label for="email" id="form-email">Email</label>
-          <input
-            type="email"
-            id="form-email"
-            name="email"
-            placeholder="Enter Email"
-            required
-            autofocus
-          />
-        </div>
-        <button type="submit">Login</button>
-        <a href="#">
-          <legend id="forgot-pass">Forgot Password?</legend>
-        </a>
-        <button type="submit" id="submit-btn" name="submit">
-          <a href="register.html">Create Account</a>
-        </button>
-      </form>
-      <p id="login-message" class="error-message"></p>
+      <div class="konten">
+        <h1>Login to My Account</h1>
+        <form action="#" method="post" class="loginForm" autocomplete="off">
+          <div class="form-group">
+            <label for="email" id="form-email">Email</label>
+            <input
+              type="email"
+              id="form-email"
+              name="email"
+              placeholder="Enter Email"
+              required
+              autofocus
+            />
+            <label for="password" id="form-password">Password</label>
+            <input
+              type="password"
+              id="form-password"
+              name="password"
+              placeholder="Enter Password"
+              required
+              autofocus
+            />
+          </div>
+          <button type="submit">Login</button>
+          <a href="#">
+            <legend id="forgot-pass">Forgot Password?</legend>
+          </a>
+          <button type="submit" id="submit-btn" name="submit">
+            <a href="register.html">Create Account</a>
+          </button>
+        </form>
+        <p id="login-message" class="error-message"></p>
+      </div>
     </div>
-    <script src="./js/java.js"></script>
-    <!-- Konten End -->
 
     <!-- start of footer -->
     <footer class="footer">
@@ -119,5 +125,8 @@
         <p>© 2023 Our Orthos</p>
       </div>
     </footer>
+
+    <!-- Script -->
+    <script src="./js/main.js"></script>
   </body>
 </html>
