@@ -3,22 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/registrasi.css" />
-    <title>Form Register</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Register</title>
   </head>
-
   <body>
     <!-- Navbar -->
     <nav class="navbar">
       <div class="navbar-logo">
-        <a href=""><img src="assets/svg/logo.svg" alt="" /></a>
+        <a href="index.html"><img src="./assets/img/logo.svg" alt="" /></a>
       </div>
       <div id="dropdown" data-visible="false" class="navbar-nav">
         <div class="navbar-middle">
-          <a href="index.html" class="active">Home</a>
+          <a href="index.html">Home</a>
           <a href="about.html">About Us</a>
-          <a href="plan-your-visit.html">Plan Your Visit</a>
-          <a href="profile page.html">Book Appointment</a>
+          <a href="plan-your-visit.html" class="active">Plan Your Visit</a>
+          <!-- <a href="profile-page.html">Book Appointment</a> -->
         </div>
         <div class="navbar-login">
           <a href="login.html" class="login">Login</a>
@@ -33,51 +32,51 @@
     </nav>
     <!-- Navbar End -->
 
-    <!-- Form Login Start -->
-    <main>
-      <div class="register-container">
-        <h2>Register</h2>
-        <form action="proses_register.php" method="POST" autocomplete="off">
+    <!-- Konten Start -->
+    <div class="login-main">
+      <div class="konten">
+        <img src="./assets/img/regis.jpg" />
+      </div>
+      <div class="konten">
+        <h1>Create New Account</h1>
+        <form action="#" method="post" class="loginForm" autocomplete="off">
           <div class="form-group">
-            <label for="username">Username</label>
+            <label for="username" id="form-username">Username</label>
             <input
               type="text"
-              id="username"
+              id="form-username"
               name="username"
               placeholder="Enter Username"
+              required
               autofocus
             />
-          </div>
-          <div class="form-group">
-            <label for="email" id="email">Email</label>
+            <label for="email" id="form-email">Email</label>
             <input
               type="email"
-              id="email"
+              id="form-email"
               name="email"
               placeholder="Enter Email"
               required
+              autofocus
             />
-          </div>
-          <div class="form-group">
-            <label for="password" id="password">Password</label>
+            <label for="password" id="form-password">Password</label>
             <input
               type="password"
-              id="password"
+              id="form-password"
               name="password"
               placeholder="Enter Password"
               required
-              minlength="8"
+              autofocus
             />
           </div>
-          <button type="submit">Register</button>
+          <button type="submit" id="submit-btn" name="submit">
+            <a href="profile-page.html">Create Account</a>
+          </button>
+          <p>Already have account? <a href="login-new.html"> Login Now </a></p>
         </form>
-        <p id="register-message" class="error-message"></p>
+        <p id="login-message" class="error-message"></p>
       </div>
-      <!-- <div class="left">
-            <img src="asset/img/regis.jpg" alt="regis">
-        </div> -->
-      <script src="./js/java.js"></script>
-    </main>
+    </div>
 
     <!-- start of footer -->
     <footer class="footer">
@@ -132,5 +131,7 @@
         <p>© 2023 Our Orthos</p>
       </div>
     </footer>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>

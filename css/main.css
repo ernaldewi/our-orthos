@@ -33,6 +33,7 @@ body {
   z-index: 1000;
   font-weight: bold;
   top: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Navbar Logo */
@@ -76,6 +77,21 @@ body {
 }
 
 .navbar .navbar-nav .navbar-login a:hover {
+  color: var(--primary);
+  background-color: var(--secondary);
+  border: var(--primary) 1px solid;
+}
+
+.navbar .navbar-nav .navbar-logout a {
+  color: var(--secondary);
+  background-color: var(--primary);
+  border-radius: 15px;
+  min-width: 2rem;
+  padding: 0.3rem 0.94rem;
+  font-weight: bold;
+}
+
+.navbar .navbar-nav .navbar-logout a:hover {
   color: var(--primary);
   background-color: var(--secondary);
   border: var(--primary) 1px solid;
@@ -182,25 +198,20 @@ footer .copyright {
   padding: 40px;
   background-color: var(--primary);
 }
-
-/* Style the columns */
 .erna-hero-section .column {
   flex: 1;
   padding: 20px;
 }
-
 .erna-hero-section .column h1 {
   font-size: 45px;
   margin-bottom: 10px;
   color: var(--background);
 }
-
 .erna-hero-section .column p {
   font-size: 16px;
   margin-bottom: 20px;
   color: var(--background);
 }
-
 .erna-hero-section .column a {
   display: inline-block;
   padding: 10px 20px;
@@ -214,12 +225,10 @@ footer .copyright {
   background-color: gray;
   color: var(--background);
 }
-
 .erna-hero-section .column img {
   max-width: 100%;
   height: auto;
 }
-
 .erna-four-column-section {
   display: flex;
   flex-wrap: wrap;
@@ -227,7 +236,6 @@ footer .copyright {
   padding: 40px;
   background-color: #f0f0f0;
 }
-
 .erna-four-column-section .column {
   border-radius: 25px;
   text-align: center;
@@ -238,17 +246,14 @@ footer .copyright {
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 .erna-four-column-section .column .icon span {
   font-size: 100px;
   margin-bottom: 10px;
 }
-
 .erna-four-column-section .column h2 {
   font-size: 18px;
   margin-bottom: 10px;
 }
-
 .erna-carousel-container {
   width: 80%;
   margin: 0 auto;
@@ -257,14 +262,12 @@ footer .copyright {
   padding: 50px 0;
   background-color: #fff;
 }
-
 .erna-carousel-container .carousel {
   display: flex;
   width: 100%;
   transition: transform 0.5s ease-in-out;
   margin-top: 20px;
 }
-
 .erna-carousel-container .carousel .service {
   flex: 0 0 100%;
   text-align: center;
@@ -272,7 +275,6 @@ footer .copyright {
   /* border: 1px solid #ccc; */
   box-sizing: border-box;
 }
-
 .erna-carousel-container .carousel .service img {
   max-width: 100%;
   /* height: auto; */
@@ -280,7 +282,6 @@ footer .copyright {
   object-fit: cover;
   border-radius: 25px;
 }
-
 .erna-carousel-container .carousel .service h3 {
   margin-top: 10px;
 }
@@ -297,42 +298,33 @@ footer .copyright {
   max-height: 50vh;
   overflow: visible;
 }
-
 .hero h1 {
   color: var(--secondary);
   font-size: 4rem;
 }
-
 .hero img {
   margin-top: 4%;
   width: 60vh;
 }
-
-/* What to Do */
 .what-to-do {
   padding: 0 7%;
   margin: 4.68rem 0 0;
 }
-
 .what-to-do .title {
   text-align: center;
 }
-
 .what-to-do .title h2 {
   font-size: 2.75rem;
   font-weight: bold;
 }
-
 .what-to-do .title h3 {
   font-size: 1.25rem;
   font-weight: normal;
 }
-
 .what-to-do .title img {
   width: 10rem;
   margin-top: 1rem;
 }
-
 .almamater {
   margin-top: 20px;
 }
@@ -345,7 +337,6 @@ footer .copyright {
   height: 60px;
   justify-content: space-evenly;
 }
-
 .almamater-logo img {
   width: 54px;
 
@@ -353,7 +344,6 @@ footer .copyright {
   flex-shrink: 0;
 }
 /* End Almamater Logo */
-
 /* container visi misi */
 .container-visi-misi {
   justify-content: center;
@@ -362,13 +352,11 @@ footer .copyright {
   height: 500px;
   display: flex;
 }
-
 .container-visi-misi-flex {
   justify-content: space-evenly;
   display: flex;
   flex-direction: column;
 }
-
 .container-vision {
   width: 400px;
   height: 260px;
@@ -377,7 +365,6 @@ footer .copyright {
   background: #294b67;
   margin-top: 30px;
 }
-
 .container-mission {
   width: 400px;
   height: 230px;
@@ -386,7 +373,6 @@ footer .copyright {
   background: #294b67;
   margin-top: 30px;
 }
-
 .container-values {
   width: 570px;
   height: 525px;
@@ -395,11 +381,9 @@ footer .copyright {
   border-radius: 10px;
   margin-left: 30px;
 }
-
 .ourteam {
   margin-top: 100px;
 }
-
 .container-ourteam {
   margin-top: 20px;
   width: 150px;
@@ -408,7 +392,6 @@ footer .copyright {
   justify-content: space-evenly;
   gap: 40px;
 }
-
 .container-award {
   text-align: center;
   margin-top: 20px;
@@ -421,7 +404,6 @@ footer .copyright {
   color: black;
   font-size: 14px;
 }
-
 .container-div1,
 .container-div2,
 .container-div3,
@@ -437,7 +419,6 @@ footer .copyright {
   font-family: "Vollkorn", serif;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 }
-
 .container-div1 img,
 .container-div2 img,
 .container-div3 img,
@@ -446,7 +427,6 @@ footer .copyright {
 .container-div6 img {
   border-radius: 10%;
 }
-
 .container-div1 h1,
 .container-div2 h1,
 .container-div3 h1,
@@ -455,7 +435,6 @@ footer .copyright {
 .container-div6 h1 {
   font-size: small;
 }
-
 .container-row2 {
   margin-top: 20px;
   width: 150px;
@@ -465,17 +444,14 @@ footer .copyright {
   gap: 40px;
   margin-top: 80px;
 }
-
 .container-1 {
   display: flex;
   gap: 2px;
 }
-
 .container-2 {
   display: flex;
   gap: 2px;
 }
-
 .containerdiv1-6 {
   margin-bottom: 115px;
 }
@@ -486,50 +462,40 @@ footer .copyright {
 .what-to-do .steps {
   margin: 0 20%;
 }
-
 .what-to-do .steps .step {
   margin: 4.12rem 0;
   display: flex;
 }
-
 .what-to-do .steps .step .step-image {
   padding: 0 1rem;
 }
-
 .what-to-do .steps .step .step-image img {
   width: 4.5rem;
 }
-
 .what-to-do .steps .step .step-container {
   padding: 0 1rem;
 }
-
 .what-to-do .steps .step .step-container .step-title p {
   color: var(--third);
   width: fit-content;
   border-bottom: var(--third) 2px solid;
   border-image: linear-gradient(to right, var(--third) 30%, transparent 30%) 1;
 }
-
 .what-to-do .steps .step .step-container .schedule p {
   width: 9.43rem;
 }
-
 /* What to Do Step 2 Schedule */
 .what-to-do .steps .step .step-container .schedule .weekday,
 .saturday,
 .sunday {
   display: flex;
 }
-
 .what-to-do .steps .step .step-container .schedule .end {
   float: right;
 }
-
 .what-to-do .steps .step .step-container .schedule span {
   margin-left: 1rem;
 }
-
 /* What to Do Step 3 Booking */
 .what-to-do .steps .step .step-container .book {
   display: flex;
@@ -537,7 +503,6 @@ footer .copyright {
   justify-content: center;
   margin-top: 4.12rem;
 }
-
 .what-to-do .steps .step .step-container .book a {
   background-color: var(--primary);
   color: var(--secondary);
@@ -546,27 +511,22 @@ footer .copyright {
   padding: 0.3rem 0.94rem;
   font-weight: bold;
 }
-
 /* HR step divider */
 hr {
   border: 1px solid;
 }
-
 /* FaQ */
 .faq {
   padding: 0 7%;
   margin: 4.68rem 0;
 }
-
 .faq .title {
   text-align: center;
 }
-
 .faq .title h2 {
   font-size: 2.75rem;
   font-weight: bold;
 }
-
 /* Faq Container */
 .faq .container {
   margin: 20px 10% 0;
@@ -576,18 +536,15 @@ hr {
   grid-template-columns: 50% 50%;
   justify-content: space-around;
 }
-
 /* Faq Image */
 .faq .container .faq-image {
   margin: 0 auto;
   display: flex;
   align-items: end;
 }
-
 .faq .container .faq-image img {
   max-width: 55vh;
 }
-
 /* Faq Accordion */
 .faq .container .accordion {
   border: 2px solid var(--secondary);
@@ -595,7 +552,6 @@ hr {
   background-color: var(--primary);
   margin: 1.25rem;
 }
-
 .faq .container .accordion .accordion-tab .label {
   padding: 0 0.62rem;
   color: var(--secondary);
@@ -604,12 +560,10 @@ hr {
   transition: 0.4s;
   cursor: pointer;
 }
-
 .faq .container .accordion .accordion-tab .label p {
   font-weight: bold;
   padding: 0.62rem;
 }
-
 .faq .container .accordion .accordion-tab .content {
   padding: 0 0.62rem;
   color: var(--secondary);
@@ -617,20 +571,16 @@ hr {
   max-height: 0;
   transition: max-height 0.2s ease-out;
 }
-
 .faq .container .accordion .accordion-tab .content p {
   font-size: 0.95rem;
   padding: 0 0.62rem 0.62rem;
 }
-
 .faq .container .accordion hr {
   color: var(--secondary);
 }
-
 /* END OF VISIT YOUR PLAN */
 
 /* START OF LIST DOCTOR */
-
 .container-header {
   display: flex;
   justify-content: center;
@@ -638,10 +588,17 @@ hr {
   flex-direction: column;
   text-align: center;
 }
-
 .container-header img {
   width: 10rem;
   height: 100px;
+}
+
+.tabel-jadwal {
+  overflow-x: scroll;
+}
+
+.tabel-jadwal table {
+  margin: 25px 10px;
 }
 
 .tabel-jadwal table,
@@ -649,14 +606,12 @@ td,
 th {
   border: 1px solid;
   width: 95vw;
-  margin: 0 auto 80px auto;
+  /* margin: 0 auto 80px auto; */
 }
-
 .book-2 {
   margin-bottom: 30px;
   text-align: center;
 }
-
 .book-2 a {
   background-color: var(--primary);
   color: var(--secondary);
@@ -665,114 +620,164 @@ th {
   padding: 0.3rem 0.94rem;
   font-weight: bold;
 }
-
 /* END OF LIST DOCTOR */
 
-/* THIS CSS IS NOT USE */
-/* .awardall {
-  color: black;
-} */
+/* Booking-form Style */
+.Rectangle-5 {
+  width: 100vw;
+  height: 200px;
+  background-color: var(--primary);
+  color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.Rectangle-6 {
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--primary);
+  font-weight: bolder;
+  margin: 20px 0 20px 0;
+}
+.book-form {
+  width: 60vw;
+  border: 4px solid var(--primary);
+  border-radius: 10px;
+  padding: 10px 0 0 20px;
+  margin: 0 auto 20px auto;
+  font-size: 1.3rem;
+}
+.book-form p {
+  color: #6c6c6d;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+.divlabel-1,
+.divlabel-2 {
+  font-weight: bolder;
+}
+.divlabel-1,
+.divlabel-2 {
+  margin-bottom: 20px;
+}
+.container-account {
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  height: 110px;
+}
+.account,
+.booked-app,
+h1 {
+  margin-bottom: 20px;
+}
 
-    /* Booking-form Style */
-    .Rectangle-5 {
-      width: 100vw;
-      height: 200px;
-      background-color: var(--primary);
-      color: var(--background);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 2rem;
-    }
-
-    .Rectangle-6 {
-      font-size: 1.6rem;
-      text-align: center;
-      color: var(--primary);
-      font-weight: bolder;
-      margin: 20px 0 20px 0;
-    }
-
-    .book-form {
-      width: 60vw;
-      border: 4px solid var(--primary);
-      border-radius: 10px;
-      padding: 10px 0 0 20px;
-      margin: 0 auto 20px auto;
-      font-size: 1.3rem;
-      
-    }
-    .book-form p {
-      color: #6C6C6D;
-      font-size: 0.9rem;
-      font-style: italic;
-    }
-
-    .divlabel-1, .divlabel-2 {
-      font-weight: bolder;
-    } 
-
-    .divlabel-1, .divlabel-2 {
-      margin-bottom: 20px;
-    }
-
-    .container-account {
-      border: 1px solid var(--primary);
-      border-radius: 10px;
-      height: 110px;
-      
-      
-    }
-
-    .account, .booked-app, h1 {
-      margin-bottom: 20px;
-    }
-
-    /* Profil Page */
-    /* changed name of class from tabel to tableprofile <hanif> */
-    .tableprofile th {
-      border: none;
-      margin-top: 1rem; 
-
-    }
-    .noborder {
-      border: none;
-    }
-    .manualborder {
-      border-radius: 10px;
-    }
-
-    .tableprofile td {
-      border-radius: 10px;
-      text-align: center;
-      padding-top: 0.3rem;
-      
-      
-    }
-
-
-    .container-account-booked {
-      display: flex;
-      border-radius: 10px;
-      margin-bottom: 50px;
-      margin-top: 80px;
-      gap: 200px;
-    }
-    
-
-    .satusemua {
-      width: 80vw;
-     height: 67vh;
-      margin: 0 auto;
-    }
-
-    .header-username {
-      font-size: 2rem;
-      text-align: center;
-      margin-bottom: 50px;
-    }
-
+/* Profil Page */
+/* changed name of class from tabel to tableprofile <hanif> */
+.tableprofile th {
+  border: none;
+  margin-top: 1rem;
+}
+.noborder {
+  border: none;
+}
+.manualborder {
+  border-radius: 10px;
+}
+.tableprofile td {
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 0.3rem;
+}
+.container-account-booked {
+  display: flex;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  margin-top: 80px;
+  gap: 200px;
+}
+.satusemua {
+  width: 80vw;
+  height: 67vh;
+  margin: 0 auto;
+}
+.header-username {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
 /* End of Profil page */
+
+/* START OF LOGIN FORM */
+.login-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px;
+  padding: 20px 50px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--secondary);
+}
+.login-main .konten {
+  flex: 1;
+  padding: 20px;
+}
+.login-main .konten img {
+  width: 90%;
+}
+.login-main .konten input {
+  margin-bottom: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+}
+.login-main .konten button {
+  font-size: large;
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 6px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 10px;
+}
+.login-main .konten button:hover {
+  background-color: #34929c;
+}
+.login-main .konten p {
+  text-decoration: none;
+  color: black;
+}
+.login-main .konten a {
+  text-decoration: none;
+  color: black;
+}
+.login-main .konten a:hover {
+  text-decoration: underline;
+  color: black;
+  font-weight: bold;
+}
+.login-main .konten button a {
+  text-decoration: none;
+  color: white;
+}
+.login-main .konten button a:hover {
+  text-decoration: none;
+  color: white;
+}
+/* END OF LOGIN FORM  */
+
+/* START OF REGISTER FORM */
+
+/* END OF REGISTER FORM */
+
 /* Media Queries */
 /* Small Screen desktop/laptop */
 @media (max-width: 1199.98px) {
@@ -792,7 +797,7 @@ th {
     grid-row: 1;
   }
 
-  .Rectangle-5{
+  .Rectangle-5 {
     width: 100vw;
     height: 170px;
     background-color: var(--primary);
@@ -803,7 +808,7 @@ th {
     font-size: 2rem;
   }
 
-  .Rectangle-6{
+  .Rectangle-6 {
     color: var(--primary);
     font-weight: bolder;
     font-size: 1.4rem;
@@ -811,11 +816,12 @@ th {
   }
 
   .book-form p {
-    color: #6C6C6D;
+    color: #6c6c6d;
     font-size: 1rem;
   }
-  
-  .divlabel-1, .divlabel-2 {
+
+  .divlabel-1,
+  .divlabel-2 {
     font-weight: bolder;
     margin-bottom: 20px;
     margin-top: 10px;
@@ -835,11 +841,13 @@ th {
     gap: 100px;
     font-size: 0.9rem;
   }
-  .container-account table{
+  .container-account table {
     font-size: 0.8rem;
   }
 
-  .account, .booked-app, h1 {
+  .account,
+  .booked-app,
+  h1 {
     margin-bottom: 21px;
     margin-right: 1vw;
   }
@@ -850,10 +858,9 @@ th {
     margin-bottom: 50px;
   }
 
-  .container-account{
+  .container-account {
     height: 100px;
   }
-
 }
 
 /* Large Tablet */
@@ -924,6 +931,18 @@ th {
     background-color: var(--secondary);
   }
 
+  .navbar .navbar-nav .navbar-logout a {
+    text-align: center;
+    border-radius: 15px;
+    display: block;
+    color: var(--secondary);
+  }
+
+  .navbar .navbar-nav .navbar-logout a:hover {
+    color: var(--primary);
+    background-color: var(--secondary);
+  }
+
   .hero h1 {
     font-size: 3.2rem;
   }
@@ -953,8 +972,8 @@ th {
     grid-column: 1 / span 3;
   }
 
-    /* styling hanif */
-  .Rectangle-5{
+  /* styling hanif */
+  .Rectangle-5 {
     width: 100vw;
     height: 150px;
     background-color: var(--primary);
@@ -965,7 +984,7 @@ th {
     font-size: 2rem;
   }
 
-  .Rectangle-6{
+  .Rectangle-6 {
     color: var(--primary);
     font-weight: bolder;
     font-size: 1.4rem;
@@ -973,11 +992,12 @@ th {
   }
 
   .book-form p {
-    color: #6C6C6D;
+    color: #6c6c6d;
     font-size: 1rem;
   }
-  
-  .divlabel-1, .divlabel-2 {
+
+  .divlabel-1,
+  .divlabel-2 {
     font-weight: bolder;
     margin-bottom: 20px;
     margin-top: 10px;
@@ -997,15 +1017,17 @@ th {
     gap: 100px;
     font-size: 0.7rem;
   }
-  .container-account table{
+  .container-account table {
     font-size: 0.7rem;
   }
 
-  .account, .booked-app, h1 {
+  .account,
+  .booked-app,
+  h1 {
     margin-bottom: 21px;
     margin-right: 1vw;
   }
-  
+
   .header-username {
     font-size: 1.3rem;
     text-align: center;
@@ -1017,7 +1039,7 @@ th {
   /* ERNA STYLE */
   /* START OF INDEX STYLE */
   .erna-hero-section {
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
   }
 
@@ -1098,9 +1120,9 @@ th {
     width: 100vw;
   }
 
-      /* styling hanif */
+  /* styling hanif */
 
-  .Rectangle-5{
+  .Rectangle-5 {
     width: 100vw;
     height: 100px;
     background-color: var(--primary);
@@ -1111,7 +1133,7 @@ th {
     font-size: 1.3rem;
   }
 
-  .Rectangle-6{
+  .Rectangle-6 {
     color: var(--primary);
     font-weight: bolder;
     font-size: 0.9rem;
@@ -1119,11 +1141,12 @@ th {
   }
 
   .book-form p {
-    color: #6C6C6D;
+    color: #6c6c6d;
     font-size: 0.6rem;
   }
-  
-  .divlabel-1, .divlabel-2 {
+
+  .divlabel-1,
+  .divlabel-2 {
     font-weight: bolder;
     font-size: 1.2rem;
   }
@@ -1142,22 +1165,36 @@ th {
     gap: 90px;
     font-size: 0.6rem;
   }
-  .container-account table{
+  .container-account table {
     font-size: 0.6rem;
   }
 
-  .container-account{
+  .container-account {
     height: 80px;
   }
 
-  .account, .booked-app, h1 {
+  .account,
+  .booked-app,
+  h1 {
     margin-bottom: 21px;
     margin-right: 1vw;
   }
-  
+
   .header-username {
     font-size: 1rem;
     text-align: center;
+  }
+
+  /* START LOGIN NEW */
+  .form-login-container .main img {
+    width: 75%;
+  }
+
+  .login-main {
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+    padding: 0px;
   }
 }
 
@@ -1212,40 +1249,42 @@ th {
     font-size: 0.6rem;
   }
 
-  .Rectangle-6{
+  .Rectangle-6 {
     font-size: 0.8rem;
     color: var(--primary);
     font-weight: bolder;
   }
 
-  .Rectangle-5{
-      width: 100vw;
-      height: 60px;
-      background-color: var(--primary);
-      color: var(--background);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 0.9rem;
+  .Rectangle-5 {
+    width: 100vw;
+    height: 60px;
+    background-color: var(--primary);
+    color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
   }
-  .footer-link{
+  .footer-link {
     font-size: 0.8rem;
   }
 
   .footer .footer-title {
     font-weight: bold;
-    font-size: 1.2rem; 
- }
+    font-size: 1.2rem;
+  }
 
-  .footer .contact-us .phone p, .email p {
+  .footer .contact-us .phone p,
+  .email p {
     font-size: 0.8rem;
   }
 
   .book-form p {
-    color: #6C6C6D;
+    color: #6c6c6d;
   }
-  
-  .divlabel-1, .divlabel-2 {
+
+  .divlabel-1,
+  .divlabel-2 {
     font-weight: bolder;
   }
 
@@ -1262,19 +1301,21 @@ th {
     gap: 10vw;
     font-size: 0.5rem;
   }
-  .container-account table{
+  .container-account table {
     font-size: 0.6rem;
   }
 
-  .container-account{
+  .container-account {
     height: 80px;
   }
 
-  .account, .booked-app, h1 {
+  .account,
+  .booked-app,
+  h1 {
     margin-bottom: 21px;
     margin-right: 1vw;
   }
-  
+
   .header-username {
     font-size: 1rem;
     text-align: center;
