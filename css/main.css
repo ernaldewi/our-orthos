@@ -640,8 +640,13 @@ hr {
 }
 
 .container-header img {
-  width: 10rem;
-  height: 100px;
+  width: 12rem;
+  height: auto;
+  margin: 30px 0;
+}
+
+.tabel-jadwal {
+  overflow-x: auto;
 }
 
 .tabel-jadwal table,
@@ -1021,6 +1026,10 @@ th {
     text-align: center;
   }
 
+  .erna-reverse {
+    flex-direction: column-reverse;
+  }
+
   .erna-hero-section .column {
     flex: none;
     width: 100%;
@@ -1098,8 +1107,6 @@ th {
     width: 100vw;
   }
 
-      /* styling hanif */
-
   .Rectangle-5{
     width: 100vw;
     height: 100px;
@@ -1158,8 +1165,13 @@ th {
   .header-username {
     font-size: 1rem;
     text-align: center;
-  }
-}
+
+  .tabel-jadwal,
+  .tabel-jadwal table {
+    margin-bottom: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    }
 
 /* Mobile */
 @media (max-width: 575.98px) {
