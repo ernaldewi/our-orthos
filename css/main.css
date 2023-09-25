@@ -88,6 +88,18 @@ body {
 
 .navbar .navbar-right a {
   margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 91.97px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0;
 }
 
 /* FOOTER OVERALL */
@@ -97,7 +109,6 @@ body {
   padding-top: 1.87rem;
   background-color: var(--primary);
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
 }
 
 /* Footer Title */
@@ -117,10 +128,6 @@ body {
 }
 
 /* Footer Link */
-.footer .footer-link {
-  display: grid;
-}
-
 .footer .footer-link ul {
   list-style-type: none;
 }
@@ -589,25 +596,31 @@ hr {
   margin: 1.25rem;
 }
 
-.faq .container .accordion .accordion-tab {
-  cursor: pointer;
-  padding: 0.62rem;
-}
-
 .faq .container .accordion .accordion-tab .label {
-  padding: 0.62rem;
+  padding: 0 0.62rem;
   color: var(--secondary);
   display: flex;
   justify-content: space-between;
   transition: 0.4s;
+  cursor: pointer;
+}
+
+.faq .container .accordion .accordion-tab .label p {
+  font-weight: bold;
+  padding: 0.62rem;
 }
 
 .faq .container .accordion .accordion-tab .content {
   padding: 0 0.62rem;
-  color: black;
+  color: var(--secondary);
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.2s ease-out;
+}
+
+.faq .container .accordion .accordion-tab .content p {
+  font-size: 0.95rem;
+  padding: 0 0.62rem 0.62rem;
 }
 
 .faq .container .accordion hr {
@@ -665,6 +678,106 @@ th {
   color: black;
 } */
 
+    /* Booking-form Style */
+    .Rectangle-5 {
+      width: 100vw;
+      height: 200px;
+      background-color: var(--primary);
+      color: var(--background);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+    }
+
+    .Rectangle-6 {
+      font-size: 1.6rem;
+      text-align: center;
+      color: var(--primary);
+      font-weight: bolder;
+      margin: 20px 0 20px 0;
+    }
+
+    .book-form {
+      width: 60vw;
+      border: 4px solid var(--primary);
+      border-radius: 10px;
+      padding: 10px 0 0 20px;
+      margin: 0 auto 20px auto;
+      font-size: 1.3rem;
+      
+    }
+    .book-form p {
+      color: #6C6C6D;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+
+    .divlabel-1, .divlabel-2 {
+      font-weight: bolder;
+    } 
+
+    .divlabel-1, .divlabel-2 {
+      margin-bottom: 20px;
+    }
+
+    .container-account {
+      border: 1px solid var(--primary);
+      border-radius: 10px;
+      height: 110px;
+      
+      
+    }
+
+    .account, .booked-app, h1 {
+      margin-bottom: 20px;
+    }
+
+    /* Profil Page */
+    /* changed name of class from tabel to tableprofile <hanif> */
+    .tableprofile th {
+      border: none;
+      margin-top: 1rem; 
+
+    }
+    .noborder {
+      border: none;
+    }
+    .manualborder {
+      border-radius: 10px;
+    }
+
+    .tableprofile td {
+      border-radius: 10px;
+      text-align: center;
+      padding-top: 0.3rem;
+      
+      
+    }
+
+
+    .container-account-booked {
+      display: flex;
+      border-radius: 10px;
+      margin-bottom: 50px;
+      margin-top: 80px;
+      gap: 200px;
+    }
+    
+
+    .satusemua {
+      width: 80vw;
+     height: 67vh;
+      margin: 0 auto;
+    }
+
+    .header-username {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+/* End of Profil page */
 /* Media Queries */
 /* Small Screen desktop/laptop */
 @media (max-width: 1199.98px) {
@@ -683,6 +796,69 @@ th {
   .faq .container .accordion {
     grid-row: 1;
   }
+
+  .Rectangle-5{
+    width: 100vw;
+    height: 170px;
+    background-color: var(--primary);
+    color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  .Rectangle-6{
+    color: var(--primary);
+    font-weight: bolder;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .book-form p {
+    color: #6C6C6D;
+    font-size: 1rem;
+  }
+  
+  .divlabel-1, .divlabel-2 {
+    font-weight: bolder;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .satusemua {
+    width: 70vw;
+    height: 67vh;
+    margin: 0 auto;
+  }
+
+  .container-account-booked {
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    margin-top: 80px;
+    gap: 100px;
+    font-size: 0.9rem;
+  }
+  .container-account table{
+    font-size: 0.8rem;
+  }
+
+  .account, .booked-app, h1 {
+    margin-bottom: 21px;
+    margin-right: 1vw;
+  }
+
+  .header-username {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .container-account{
+    height: 100px;
+  }
+
 }
 
 /* Large Tablet */
@@ -692,27 +868,41 @@ th {
   }
 
   .navbar .navbar-nav {
-    display: none;
-    position: absolute;
-    right: 0;
-    margin-right: 7%;
-    top: 60px;
-    width: 200px;
-    border-radius: 10px;
-    background-color: var(--secondary);
-    opacity: 0.8;
-    overflow: hidden;
-    border: var(--primary) 1px solid;
+    position: fixed;
+    inset: calc(100% - 91.97px) 0 0 40%;
+    top: 91.97px;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--secondary);
+    justify-content: initial;
+    padding: 1em;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 50ms ease-in;
   }
 
-  .navbar .navbar-nav.open {
+  .navbar-nav[data-visible="true"] {
+    transform: translateX(0%);
+  }
+
+  .overlay {
     display: block;
+    z-index: 999;
+    transform: translateX(-100%);
+    transition: transform 50ms ease-in, opacity 50ms linear;
+  }
+
+  .overlay[data-visible="true"] {
+    opacity: 0.5;
+    transform: translateX(0%);
   }
 
   .navbar .navbar-nav .navbar-middle a {
-    margin: 0;
+    margin: 0.3rem 0;
     padding: 0.5rem;
     width: 100%;
+    border-radius: 15px;
   }
 
   .navbar .navbar-nav .navbar-middle a:hover {
@@ -729,14 +919,14 @@ th {
 
   .navbar .navbar-nav .navbar-login a {
     text-align: center;
-    border-radius: 10px;
+    border-radius: 15px;
     display: block;
+    color: var(--secondary);
   }
 
   .navbar .navbar-nav .navbar-login a:hover {
     color: var(--primary);
     background-color: var(--secondary);
-    border: var(--primary) 1px solid;
   }
 
   .hero h1 {
@@ -759,17 +949,71 @@ th {
     margin: 2.81rem 0;
   }
 
-  .footer {
-    grid-template-columns: auto auto auto;
+  .footer .footer-logo {
+    grid-column: 1 / span 3;
+    justify-content: center;
   }
 
   .footer .copyright {
     grid-column: 1 / span 3;
   }
 
-  .footer .footer-logo {
-    grid-column: 1 / span 3;
+    /* styling hanif */
+  .Rectangle-5{
+    width: 100vw;
+    height: 150px;
+    background-color: var(--primary);
+    color: var(--background);
+    display: flex;
     justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  .Rectangle-6{
+    color: var(--primary);
+    font-weight: bolder;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .book-form p {
+    color: #6C6C6D;
+    font-size: 1rem;
+  }
+  
+  .divlabel-1, .divlabel-2 {
+    font-weight: bolder;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .satusemua {
+    width: 80vw;
+    height: 62vh;
+    margin: 0 auto;
+  }
+
+  .container-account-booked {
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    margin-top: 70px;
+    gap: 100px;
+    font-size: 0.7rem;
+  }
+  .container-account table{
+    font-size: 0.7rem;
+  }
+
+  .account, .booked-app, h1 {
+    margin-bottom: 21px;
+    margin-right: 1vw;
+  }
+  
+  .header-username {
+    font-size: 1.3rem;
+    text-align: center;
   }
 }
 
@@ -863,13 +1107,71 @@ th {
     width: 100vw;
   }
 
+  .Rectangle-5{
+    width: 100vw;
+    height: 100px;
+    background-color: var(--primary);
+    color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+
+  .Rectangle-6{
+    color: var(--primary);
+    font-weight: bolder;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .book-form p {
+    color: #6C6C6D;
+    font-size: 0.6rem;
+  }
+  
+  .divlabel-1, .divlabel-2 {
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+
+  .satusemua {
+    width: 90vw;
+    height: 62vh;
+    margin: 0 auto;
+  }
+
+  .container-account-booked {
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    gap: 90px;
+    font-size: 0.6rem;
+  }
+  .container-account table{
+    font-size: 0.6rem;
+  }
+
+  .container-account{
+    height: 80px;
+  }
+
+  .account, .booked-app, h1 {
+    margin-bottom: 21px;
+    margin-right: 1vw;
+  }
+  
+  .header-username {
+    font-size: 1rem;
+    text-align: center;
+
   .tabel-jadwal,
   .tabel-jadwal table {
     margin-bottom: 25px;
     margin-left: 10px;
     margin-right: 10px;
-  }
-}
+    }
 
 /* Mobile */
 @media (max-width: 575.98px) {
@@ -916,5 +1218,77 @@ th {
     width: 400px;
     height: 550px;
     margin-left: 0px;
+  }
+
+  .book-form {
+    font-size: 0.6rem;
+  }
+
+  .Rectangle-6{
+    font-size: 0.8rem;
+    color: var(--primary);
+    font-weight: bolder;
+  }
+
+  .Rectangle-5{
+      width: 100vw;
+      height: 60px;
+      background-color: var(--primary);
+      color: var(--background);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.9rem;
+  }
+  .footer-link{
+    font-size: 0.8rem;
+  }
+
+  .footer .footer-title {
+    font-weight: bold;
+    font-size: 1.2rem; 
+ }
+
+  .footer .contact-us .phone p, .email p {
+    font-size: 0.8rem;
+  }
+
+  .book-form p {
+    color: #6C6C6D;
+  }
+  
+  .divlabel-1, .divlabel-2 {
+    font-weight: bolder;
+  }
+
+  .satusemua {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .container-account-booked {
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    gap: 10vw;
+    font-size: 0.5rem;
+  }
+  .container-account table{
+    font-size: 0.6rem;
+  }
+
+  .container-account{
+    height: 80px;
+  }
+
+  .account, .booked-app, h1 {
+    margin-bottom: 21px;
+    margin-right: 1vw;
+  }
+  
+  .header-username {
+    font-size: 1rem;
+    text-align: center;
   }
 }

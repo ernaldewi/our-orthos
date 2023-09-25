@@ -1,10 +1,31 @@
 // Navbar Menu Button
-var navbarNav = document.getElementById("dropdown"),
-  menuButton = document.getElementById("menu");
+const navbarNav = document.querySelector(".navbar-nav");
+const menuButton = document.querySelector(".menu");
+const menuImg = document.querySelector(".menu-img");
+const overlay = document.querySelector(".overlay");
+const body = document.body;
 
-menuButton.onclick = function () {
-  navbarNav.classList.toggle("open");
-};
+function updateVisibility() {
+  const visibility = navbarNav.getAttribute("data-visible");
+  const newVisibility = visibility === "false" ? "true" : "false";
+
+  navbarNav.setAttribute("data-visible", newVisibility);
+  menuButton.setAttribute("aria-expanded", newVisibility);
+  if (newVisibility === "false") {
+    menuImg.src = "assets/svg/menu.svg";
+  } else {
+    menuImg.src = "assets/svg/close.svg";
+  }
+  overlay.setAttribute("data-visible", newVisibility);
+}
+
+menuButton.addEventListener("click", () => {
+  updateVisibility();
+});
+
+overlay.addEventListener("click", () => {
+  updateVisibility();
+});
 
 // SET INTERVAL FOR CAROUSEL SERVIVES
 
@@ -30,17 +51,16 @@ function updateCarousel() {
 setInterval(nextService, intervalTime);
 
 // Accordion
-var acc = document.getElementsByClassName("label");
-var i;
+const labels = document.querySelectorAll(".label");
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
+labels.forEach(function (label) {
+  label.addEventListener("click", function () {
     this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "rem";
-    }
+    const content = this.nextElementSibling;
+
+    content.style.maxHeight =
+      !content.style.maxHeight || content.style.maxHeight === "0px"
+        ? content.scrollHeight + "px"
+        : "0px";
   });
-}
+});
